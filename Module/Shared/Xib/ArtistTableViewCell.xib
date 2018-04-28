@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="103" id="KGk-i7-Jjw" customClass="ArtistTableViewCell" customModule="hkImperatorMensa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="288" height="102.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iron.maiden" translatesAutoresizingMaskIntoConstraints="NO" id="PPS-zP-m6f">
+                        <rect key="frame" x="16" y="1" width="100" height="100.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="OUS-W9-52I"/>
+                            <constraint firstAttribute="height" constant="100" id="c89-Jd-ud1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDh-Vf-AQZ">
+                        <rect key="frame" x="124" y="31" width="90" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUd-Fo-fbU">
+                        <rect key="frame" x="124" y="51" width="40.5" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QDh-Vf-AQZ" firstAttribute="leading" secondItem="PPS-zP-m6f" secondAttribute="trailing" constant="8" id="047-Wj-VcW"/>
+                    <constraint firstItem="PPS-zP-m6f" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="4jJ-Lg-8p9"/>
+                    <constraint firstItem="UUd-Fo-fbU" firstAttribute="leading" secondItem="PPS-zP-m6f" secondAttribute="trailing" constant="8" id="Ajk-GQ-7eb"/>
+                    <constraint firstItem="QDh-Vf-AQZ" firstAttribute="centerY" secondItem="PPS-zP-m6f" secondAttribute="centerY" constant="-10" id="Hvk-BS-Lfi"/>
+                    <constraint firstItem="PPS-zP-m6f" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Jfo-1T-0Tf"/>
+                    <constraint firstItem="PPS-zP-m6f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="jgj-b5-oWI"/>
+                    <constraint firstItem="UUd-Fo-fbU" firstAttribute="centerY" secondItem="PPS-zP-m6f" secondAttribute="centerY" constant="10" id="m5j-Uq-6LB"/>
+                    <constraint firstAttribute="bottom" secondItem="PPS-zP-m6f" secondAttribute="bottom" constant="1" id="oWr-GF-nfi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="genreLabel" destination="UUd-Fo-fbU" id="uQy-kU-d7s"/>
+                <outlet property="imageViewer" destination="PPS-zP-m6f" id="9jZ-zj-071"/>
+                <outlet property="nameLabel" destination="QDh-Vf-AQZ" id="3ZE-Jk-btg"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="83.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iron.maiden" width="682" height="391"/>
+    </resources>
+</document>
